@@ -3,7 +3,16 @@ import Script from "next/script";
 import { attributes } from "../content/home.md";
 
 export default function Home() {
-  let { title, cats } = attributes;
+  let { images } = attributes;
+
+  const newPath = images.map(image => {
+    let newPath = { ...image };
+    newPath.imagepath = newPath.imagepath.replace("public/", "");
+    return newPath;
+  });
+
+  console.log(newPath);
+
   return (
     <main className="">
       <div className="container">
@@ -22,7 +31,7 @@ export default function Home() {
           </div>
           <div className="col-12 col-md-4">
             <div className="card">
-              <Image src="/img/bitmoji.png" className="card-img-top" width={500} height={500} alt="Test Image" />
+              <Image src={newPath[0].imagepath} className="card-img-top" width={500} height={500} alt="Test Image" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
@@ -34,7 +43,7 @@ export default function Home() {
           </div>
           <div className="col-12 col-md-4">
             <div className="card">
-              <Image src="/img/bitmoji.png" className="card-img-top" width={500} height={500} alt="Test Image" />
+              <Image src={newPath[1].imagepath} className="card-img-top" width={500} height={500} alt="Test Image" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
