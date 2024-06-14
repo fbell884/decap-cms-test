@@ -6,6 +6,7 @@ cats:
     description: Mixed
 images:
   - imagepath: public/img/beer_and_pretzels_clip_art_medium.png
+  - imagepath: public/img/alcohol-beverage-label-design-5693553.svg
 ---
 
 THANKS FOR THE TEST
