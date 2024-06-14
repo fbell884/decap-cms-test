@@ -5,7 +5,7 @@ cats:
   - name: Hazel
     description: Mixed
 images:
-  - imagepath: public/img/beer_and_pretzels_clip_art_medium.png
+  - imagepath: public/img/sleeping-cat-1531012.jpg
   - imagepath: public/img/alcohol-beverage-label-design-5693553.svg
 ---
 
