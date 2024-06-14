@@ -6,5 +6,6 @@ module.exports = {
       options: { mode: ["react-component"] }
     });
     return cfg;
-  }
+  },
+  crossOrigin: "anonymous"
 };
