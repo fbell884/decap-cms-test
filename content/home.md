@@ -9,7 +9,7 @@ images:
   - imagepath: public/img/alcohol-beverage-label-design-5693553.svg
 homeCards:
   - cardNumber: 1
-    title: Card Test 1
+    title: Card Test From Admin UI
     description: This is my first card
   - cardNumber: 2
     title: Card Test 2
