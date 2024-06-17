@@ -7,6 +7,16 @@ cats:
 images:
   - imagepath: public/img/sleeping-cat-1531012.jpg
   - imagepath: public/img/alcohol-beverage-label-design-5693553.svg
+homeCards:
+  - cardNumber: 1
+    title: Card Test 1
+    description: This is my first card
+  - cardNumber: 2
+    title: Card Test 2
+    description: This is my second card
+  - cardNumber: 3
+    title: Card Test 3
+    description: This is my third card
 ---
 
 THANKS FOR THE TEST

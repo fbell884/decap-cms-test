@@ -25,3 +25,10 @@ collections:
             widget: list
             fields:
               - { label: "Image Path", name: "imagepath", widget: "string" }
+          - label: "Home Cards"
+            name: "homeCards"
+            widget: "list"
+            fields:
+              - { label: "Card Number", name: "cardNumber", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
