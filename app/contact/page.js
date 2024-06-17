@@ -59,7 +59,7 @@ export default function Contact() {
             </label>
             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" name="email" value={values.email} onChange={handleChange} />
             <div id="emailHelp" className="form-text">
-              We'll never share your email with anyone else.
+              We&apos;ll never share your email with anyone else.
             </div>
           </div>
           <div className="mb-3">
