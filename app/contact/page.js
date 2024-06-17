@@ -55,7 +55,7 @@ export default function Contact() {
           </div>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
-              Email address
+              Email Address
             </label>
             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" name="email" value={values.email} onChange={handleChange} />
             <div id="emailHelp" className="form-text">
