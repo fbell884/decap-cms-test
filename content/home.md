@@ -7,8 +7,8 @@ images:
   - imagepath: public/img/alcohol-beverage-label-design-5693553.svg
 homeCards:
   - cardNumber: 1
-    title: Card Test From Admin UI
-    description: This is my first card
+    title: Showing Colby
+    description: June 26th 2024
   - cardNumber: 2
     title: Card Test 2
     description: This is my second card
