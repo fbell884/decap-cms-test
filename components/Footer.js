@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Footer(props) {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center px-2 px-md-4 py-3 my-4 border-top">
+    <footer className="d-flex flex-wrap justify-content-between align-items-center px-2 px-md-4 py-4 border-top sageBg">
       <div className="col-md-4 d-flex align-items-center">
         <Link href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
           <span className="fa-solid fa-basketball"></span>

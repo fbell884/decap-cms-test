@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Script from "next/script";
 import { attributes } from "../content/home.md";
+import FeaturedCard from "../components/FeaturedCard";
+import HomeCard from "@/components/HomeCard";
+import Banner from "@/components/Banner";
+import ContactBanner from "@/components/ContactBanner";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 export default function Home() {
   let { images, homeCards } = attributes;
@@ -11,59 +17,19 @@ export default function Home() {
     return newPath;
   });
 
-  console.log(newPath);
-  console.log(homeCards);
-
   return (
     <main className="">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-4">
-            <div className="card">
-              <Image src="/img/bitmoji.png" className="card-img-top" width={500} height={500} alt="Test Image" />
-              <div className="card-body">
-                <h5 className="card-title">{homeCards[0].title}</h5>
-                <p className="card-text">{homeCards[0].description}</p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="card">
-              <Image src={newPath[0].imagepath} className="card-img-top" width={500} height={500} alt="Test Image" />
-              <div className="card-body">
-                <h5 className="card-title">{homeCards[1].title}</h5>
-                <p className="card-text">{homeCards[1].description}</p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="card">
-              <Image src={newPath[1].imagepath} className="card-img-top" width={500} height={500} alt="Test Image" />
-              <div className="card-body">
-                <h5 className="card-title">{homeCards[2].title}</h5>
-                <p className="card-text">{homeCards[2].description}</p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <Banner bgColor="whiteBg" h1Text="Welcome to our Website!" subheadText="Thanks for visiting! We hope you can find what you are looking for." />
+      <div className="lightBlueBg py-5">
+        <Container>
+          <Row className="justify-content-center">
+            <HomeCard imgSrc={newPath[0].imagepath} cardTitle={homeCards[0].title} cardBodyText={homeCards[0].description} buttonText="Go Here!" />
+            <HomeCard imgSrc={newPath[1].imagepath} cardTitle={homeCards[1].title} cardBodyText={homeCards[1].description} buttonText="Button 2!" />
+            <HomeCard imgSrc={newPath[2].imagepath} cardTitle={homeCards[2].title} cardBodyText={homeCards[2].description} buttonText="Button 3!" />
+          </Row>
+        </Container>
       </div>
-      {/* <div>
-        {cats.map((cat, k) => (
-          <span key={k}>
-            <h2>{cat.name}</h2>
-            <p>{cat.description}</p>
-          </span>
-        ))}
-      </div> */}
+      <ContactBanner bgColor="linearGradient" />
     </main>
   );
 }

@@ -7,4 +7,3 @@ if (window.netlifyIdentity) {
     }
   });
 }
-console.log("test");

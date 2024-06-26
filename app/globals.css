@@ -1,0 +1,67 @@
+/* BACKGROUND COLORS */
+.whiteBg {
+  background-color: #ffffff;
+}
+.lightGrayBg {
+  background-color: #e1e5f2;
+}
+.lightBlueBg {
+  background-color: #bfdbf7;
+}
+.turquoiseBg {
+  background-color: #1f7a8c;
+}
+.darkBlueBg {
+  background-color: #022b3a;
+}
+
+.linearGradient {
+  background: linear-gradient(45deg, white, #bfdbf7);
+}
+/* END BACKGROUND COLORS */
+
+/* TEXT COLORS */
+.whiteText {
+  background-color: #ffffff;
+}
+.lightGrayText {
+  color: #e1e5f2;
+}
+.lightBlueText {
+  color: #bfdbf7;
+}
+.turquoiseText {
+  color: #1f7a8c;
+}
+.darkBlueText {
+  color: #022b3a;
+}
+/* END TEXT COLORS */
+
+/* IMAGE SIZING */
+.cardImgSizing {
+  max-width: 200px;
+}
+/* END IMAGE SIZING */
+
+/* BUTTON STYLES */
+.btn-primary {
+  border: 2px solid #1f7a8c;
+}
+.btn-primary:active,
+.btn-primary:hover {
+  background-color: #022b3a !important;
+  border-color: #e1e5f2 !important;
+}
+
+.contactCTA {
+  max-width: 250px;
+}
+/* END BUTTON STYLES */
+
+/* CONTACT STYLES */
+@media (min-width: 768px) {
+  form {
+    width: 70% !important;
+  }
+}
