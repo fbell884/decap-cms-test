@@ -35,12 +35,11 @@ collections:
       - label: "Blog"
         name: "blog"
         file: "content/blog.md"
-          - fields: 
-            - label: "Blog Post"
-              name: "blogPost"
-              widget: list
-              fields:
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Subtitle", name: "subtitle", widget: "string" }
-                - { label: "Post", name: "post", widget: "markdown" }
-
+        fields:
+          - label: "Home Cards"
+            name: "homeCards"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Post", name: "post", widget: "markdown" }
