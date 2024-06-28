@@ -36,8 +36,8 @@ collections:
         name: "blog"
         file: "content/blog.md"
         fields:
-          - label: "Home Cards"
-            name: "homeCards"
+          - label: "Blog Posts"
+            name: "blogPosts"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
