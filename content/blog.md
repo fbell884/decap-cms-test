@@ -20,4 +20,7 @@ blogPosts:
 
       * Francis
       * Julia
+  - title: Creamcheese
+    subtitle: Bagel
+    post: It is a delicious ***treat.***
 ---
