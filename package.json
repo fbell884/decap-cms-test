@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@libsql/client": "^0.7.0",
     "bootstrap": "^5.3.3",
     "decap-cms-app": "^3.1.10",
     "decap-cms-widget-markdown": "^3.1.3",
