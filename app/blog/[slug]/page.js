@@ -38,7 +38,7 @@ const BlogPost = ({ params: { slug } }) => {
     return (
       <>
         <Banner bgColor="lightBlueBg" h1Text={blogPostMd.title} subheadingText={blogPostMd.subtitle} />
-        <Container>
+        <Container className="py-5">
           <Row className="justify-content-center">
             <Col md={10}>
               <Markdown>{blogPostMd.post}</Markdown>
