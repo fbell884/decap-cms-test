@@ -1,5 +1,7 @@
+import Banner from "@/components/Banner";
 import { attributes } from "@/content/blog.md";
 import Markdown from "react-markdown";
+import { Row, Col, Container } from "react-bootstrap";
 
 const BlogPost = ({ params: { slug } }) => {
   let { blogPosts } = attributes;
@@ -35,9 +37,14 @@ const BlogPost = ({ params: { slug } }) => {
     const blogPostMd = getPostBySlug(slug);
     return (
       <>
-        <h1>{blogPostMd.title}</h1>
-        <p>{blogPostMd.subtitle}</p>
-        <Markdown>{blogPostMd.post}</Markdown>
+        <Banner bgColor="lightBlueBg" h1Text={blogPostMd.title} subheadingText={blogPostMd.subtitle} />
+        <Container>
+          <Row className="justify-content-center">
+            <Col md={10}>
+              <Markdown>{blogPostMd.post}</Markdown>
+            </Col>
+          </Row>
+        </Container>
       </>
     );
   } else {

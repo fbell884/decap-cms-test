@@ -10,7 +10,7 @@ function Banner(props) {
             <p className="darkBlueText">{props.subheadingText}</p>
           </Col>
           <Col md={6} className="text-md-end">
-            <Image src="img/bitmoji.png" width={300} height={300} />
+            <Image src="../img/bitmoji.png" width={300} height={300} />
           </Col>
         </Row>
       </Container>
