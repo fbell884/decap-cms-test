@@ -43,3 +43,4 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "Post", name: "post", widget: "markdown" }
+              - { label: "Publish Date", name: "date", widget: "datetime", date_format: "MM/DD/YYYY" }
