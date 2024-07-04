@@ -11,6 +11,7 @@ blogPosts:
       * Prosper
 
       <https://decap-cms-test-francis.netlify.app>
+    date: 06/06/2024
   - title: Two Post
     subtitle: NextPost
     post: |-
@@ -20,6 +21,7 @@ blogPosts:
 
       * Francis
       * Julia
+    date: 07/01/2024
   - title: Creamcheese
     subtitle: Bagel
     post: >-
@@ -41,4 +43,5 @@ blogPosts:
 
 
       Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+    date: 07/04/2024
 ---
