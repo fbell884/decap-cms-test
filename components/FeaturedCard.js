@@ -15,7 +15,7 @@ function FeaturedCard(props) {
           Read Post
         </Button>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="text-muted">{props.publishDate}</Card.Footer>
     </Card>
   );
 }

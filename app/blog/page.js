@@ -13,9 +13,9 @@ function Blog() {
       <Container className="py-3">
         <div className="blogPostWrapper">
           <Row className="justify-content-center">
-            {blogPosts.map((post, key) => (
+            {blogPosts.reverse().map((post, key) => (
               <Col md={4} className="py-3" key={key}>
-                <FeaturedCard title={post.title} subtitle={post.subtitle} />
+                <FeaturedCard title={post.title} subtitle={post.subtitle} publishDate={post.date} />
               </Col>
             ))}
           </Row>
