@@ -44,4 +44,8 @@ blogPosts:
 
       Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
     date: 07/04/2024
+  - date: 07/04/2024
+    title: My Next Blog Post
+    subtitle: I love Julia
+    post: Thanks for coming! We are getting married in 2025.
 ---
